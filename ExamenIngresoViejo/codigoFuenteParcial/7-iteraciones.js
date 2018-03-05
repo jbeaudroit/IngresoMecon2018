@@ -15,7 +15,7 @@ function Mostrar()
 			nota=parseFloat(prompt("la nota debe estar entre 1 y 10, reingrese nota"))
 		}
 sexo=prompt("ingrese el sexo f o m")
-while(sexo!="f" || sexo!="m")
+while(sexo!='f' && sexo!='m')
 		{
 			sexo=prompt("el sexo debe ser ingresado como f o m")
 		}
@@ -29,6 +29,7 @@ if(nota>=6 && sexo == "m")
 	varonesnotamasseis++;
 
 }
+ }
 promedio=acumnotas/6
 alert("promedio de notas"+promedio.toFixed(2)+ ", la nota mas baja fue" + notabaja+" y la cantidad de varones con nota mayor a 6 fue de" +varonesnotamasseis)
 	
